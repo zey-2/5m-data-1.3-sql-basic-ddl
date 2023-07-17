@@ -79,6 +79,8 @@ VALUES (2, 'Jane Doe', 'jane.doe@gmail.com'),
        (3, 'John Smith', 'john.smith@gmail.com');
 ```
 
+> Insert two more rows with contiguously increasing `id` values, random `name`s and `email`s.
+
 ### 2.4 Drop table
 
 We can drop (remove) the table using the `DROP TABLE` statement.
@@ -155,16 +157,9 @@ CREATE TABLE lesson.classes (
   name VARCHAR NOT NULL, -- not null
   teacher_id INTEGER REFERENCES lesson.teachers(id) -- foreign key
 );
-
-CREATE TABLE lesson.students (
-  id INTEGER PRIMARY KEY, -- primary key
-  name VARCHAR NOT NULL, -- not null
-  address VARCHAR,
-  phone VARCHAR,
-  email VARCHAR CHECK(CONTAINS(email, '@')), -- check
-  class_id INTEGER REFERENCES lesson.classes(id) -- foreign key
-);
 ```
+
+> Complete the `CREATE TABLE` statement for the `students` table.
 
 ### 3.2 Create indexes
 
@@ -217,6 +212,8 @@ SELECT id, name, email
 FROM lesson.students;
 ```
 
+> Create a view `teachers_view` with the same columns as `students_view` but for the `teachers` table.
+
 We will learn more about the syntax in the next lesson.
 
 ## Part 5 - Importing / exporting data
@@ -243,19 +240,11 @@ SET email = 'linda.g@example.com'
 WHERE id = 4;
 ```
 
-or the following works too
-
-```sql
-UPDATE lesson.students
-SET email = 'linda.g@example.com'
-WHERE name = 'Linda Garcia';
-```
+> Try and update the email of `Linda Garcia` using her name instead of her id as the condition.
 
 ### 5.3 Exporting data
 
-Let's export the data from the student table into a CSV file delimited with `|`.
-
-> remember to prepend the full directory path to the CSV file
+Let's export the data from the student table into a CSV file delimited with `|`. Remember to prepend the full directory path to the CSV file.
 
 ```sql
 COPY (SELECT * FROM lesson.students) TO 'students_new.csv' WITH (HEADER 1, DELIMITER '|');
@@ -266,3 +255,5 @@ We can also export the data into a JSON file (you will learn more about JSON in 
 ```sql
 COPY (SELECT * FROM lesson.students) TO 'students.json';
 ```
+
+> Repeat the above steps for the `teachers` table.
