@@ -26,6 +26,7 @@ Learners will be able to:
 - Alter and drop tables
 - Create views
 - Insert data into a table
+- Updating data in a table
 - Import and export data to/from a database
 
 ## Lesson Plan
@@ -39,6 +40,6 @@ Learners will be able to:
 | 45 mins  | Code-along              | Create indexes, constraints, primary & foreign keys, alter tables, drop tables, insert data. |
 | 15 mins  | Break                   |                                                                                              |
 |          | **2 HR MARK**           |
-| 45 mins  | Code-along              | Tables vs views, import data into and export data from database.                             |
+| 45 mins  | Code-along              | Tables vs views, updating data, import data into and export data from database.              |
 | 15 mins  | Briefing / Q&A          | Brief on self studies, assignment and Q&A.                                                   |
 |          | **END CLASS 3 HR MARK** |

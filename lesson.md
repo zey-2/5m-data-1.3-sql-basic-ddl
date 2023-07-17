@@ -8,7 +8,7 @@ Overview of popular RDBMS and basic understanding of DuckDB as stipulated in [re
 
 ### Lesson Overview
 
-This lesson introduces the SQL Data Definition Language (DDL) statements. Learners will be able to create a database, schemas and tables, create indexes and constraints (including primary and foreign keys), alter tables, drop tables, create views, insert data, import and export data to/from a database.
+This lesson introduces the SQL Data Definition Language (DDL) statements. Learners will be able to create a database, schemas and tables, create indexes and constraints (including primary and foreign keys), alter tables, drop tables, create views, insert data, update data, import and export data to/from a database.
 
 ---
 
@@ -231,7 +231,27 @@ COPY table_name FROM 'file_name.csv' (AUTO_DETECT TRUE);
 
 Open [data/import.sql](./data/import.sql) which is the SQL script that contains the import data statements for the 3 tables. Prepend the full directory path to the CSV files, e.g. `/path/to/directory/5m-data-1.3-sql-basic-ddl/data/teachers.csv`
 
-### 5.2 Exporting data
+### 5.2 Updating data
+
+We can update the data in the table using the `UPDATE` statement.
+
+Let's say `Linda Garcia` changed her email to `linda.g@example.com`, we can update the `email` of the student with id 4 (her id) to `linda.g@example.com`. The `WHERE` clause is used to specify which rows to update.
+
+```sql
+UPDATE lesson.students
+SET email = 'linda.g@example.com'
+WHERE id = 4;
+```
+
+or the following works too
+
+```sql
+UPDATE lesson.students
+SET email = 'linda.g@example.com'
+WHERE name = 'Linda Garcia';
+```
+
+### 5.3 Exporting data
 
 Let's export the data from the student table into a CSV file delimited with `|`.
 
