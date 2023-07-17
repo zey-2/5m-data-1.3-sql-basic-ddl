@@ -41,5 +41,5 @@ Learners will be able to:
 | 15 mins  | Break                   |                                                                                              |
 |          | **2 HR MARK**           |
 | 45 mins  | Code-along              | Tables vs views, updating data, import data into and export data from database.              |
-| 15 mins  | Briefing / Q&A          | Brief on self studies, assignment and Q&A.                                                   |
+| 15 mins  | Briefing / Q&A          | Brief on references, assignment, quiz and Q&A.                                               |
 |          | **END CLASS 3 HR MARK** |
