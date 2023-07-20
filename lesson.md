@@ -163,7 +163,7 @@ CREATE TABLE lesson.classes (
 
 ### 3.2 Create indexes
 
-Indexes are used to improve the performance of queries. They are not required but are recommended for tables with many rows.
+Indexes are used to improve the performance of queries. They are not required but are recommended for tables with many rows. They are used to _retrieve data from the database more quickly than otherwise_. Indexes are created using one or more columns of a database table. The users cannot see the indexes, they are just used to speed up searches/queries.
 
 ```sql
 -- Create a unique index 'teachers_name_idx' on the column name of table teachers.
