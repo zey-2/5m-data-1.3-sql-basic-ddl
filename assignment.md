@@ -2,7 +2,41 @@
 
 ## Brief
 
+Write the SQL statements for the following questions.
+
 ## Instructions
+
+Paste the answer as SQL in the answer code section below each question.
+
+### Question 1
+
+Write the SQL statement to create a unique index on the `email` column of the `students` table in the `lesson` schema.
+
+Answer:
+
+```sql
+
+```
+
+### Question 2
+
+Write the SQL statement to alter the `teachers` table in the `lesson` schema to add a new column `subject` of type `VARCHAR`.
+
+Answer:
+
+```sql
+
+```
+
+### Question 3
+
+Write the SQL statement to update the `email` of the teacher with the name 'John Doe' to 'john.doe@school.com' in the teachers table of the `lesson` schema.
+
+Answer:
+
+```sql
+
+```
 
 ## Submission
 
