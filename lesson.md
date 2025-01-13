@@ -30,7 +30,7 @@ First, set up the DuckDB file, we need to run the following steps:
 ```   
 3. Run [create_duckdb.py](./db/create_duckdb.py) to create the database file.
 ```
-  python db/create_duckdb.py`
+  python db/create_duckdb.py
 ```
 Open DBeaver and create a new connection to the DuckDB database file `db/unit-1-3.db`. Refer to the steps [here](https://duckdb.org/docs/guides/sql_editors/dbeaver).
 
