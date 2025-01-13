@@ -21,9 +21,17 @@ To connect to a production database, you will need the server host, port, databa
 First, set up the DuckDB file, we need to run the following steps:
 
 1. Create a new conda environment from `environment.yml`
+```
+  conda env create -f environment.yml
+```
 2. Activate the conda environment
+```
+  conda activate dbb`
+```   
 3. Run [create_duckdb.py](./db/create_duckdb.py) to create the database file.
-
+```
+  python db/create_duckdb.py`
+```
 Open DBeaver and create a new connection to the DuckDB database file `db/unit-1-3.db`. Refer to the steps [here](https://duckdb.org/docs/guides/sql_editors/dbeaver).
 
 If you expand on the `unit-1-3.db`, you should see a few predefined schemas. The default schema is `main`. Any tables you create without specifying the schema will be in `main`. You can create additional schemas to organise your tables.
