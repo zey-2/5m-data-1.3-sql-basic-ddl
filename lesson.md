@@ -26,7 +26,7 @@ First, set up the DuckDB file, we need to run the following steps:
 ```
 2. Activate the conda environment
 ```
-  conda activate dbb
+  conda activate ddb
 ```   
 3. Run [create_duckdb.py](./db/create_duckdb.py) to create the database file.
 ```
