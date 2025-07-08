@@ -18,6 +18,12 @@ You can set up connections to any database using SQL Client or IDE like [DBeaver
 
 To connect to a production database, you will need the server host, port, database name, username and password. For this lesson, we will be using DuckDB, a lightweight, in-process SQL database management system.
 
+Open DBeaver and create a new connection to the DuckDB database file provided in this repo `db/unit-1-3.db`. Refer to the steps [here](https://duckdb.org/docs/guides/sql_editors/dbeaver).
+
+If you expand on the `unit-1-3.db`, you should see a few predefined schemas. The default schema is `main`. Any tables you create without specifying the schema will be in `main`. You can create additional schemas to organise your tables.
+
+OR You coulc create this file yourself using the steps below.
+
 First, set up the DuckDB file, we need to run the following steps:
 
 1. Create a new conda environment from `environment.yml`
@@ -33,8 +39,6 @@ First, set up the DuckDB file, we need to run the following steps:
   python db/create_duckdb.py
 ```
 Open DBeaver and create a new connection to the DuckDB database file `db/unit-1-3.db`. Refer to the steps [here](https://duckdb.org/docs/guides/sql_editors/dbeaver).
-
-If you expand on the `unit-1-3.db`, you should see a few predefined schemas. The default schema is `main`. Any tables you create without specifying the schema will be in `main`. You can create additional schemas to organise your tables.
 
 ## Part 2 - Executing SQL DDL statements
 
