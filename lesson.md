@@ -12,17 +12,31 @@ This lesson introduces the SQL Data Definition Language (DDL) statements. Learne
 
 ---
 
-## Part 1 - Connecting to database
+## Part 1 – Connecting to the Database
 
-You can set up connections to any database using SQL Client or IDE like [DBeaver](https://dbeaver.io/). It supports all popular databases: MySQL, PostgreSQL, SQLite, Oracle, DB2, SQL Server, Sybase, Teradata, MongoDB, Cassandra, Redis, etc.
+You can connect to any database using an SQL client or IDE like [DBeaver](https://dbeaver.io/), which supports databases such as MySQL, PostgreSQL, SQLite, Oracle, DB2, SQL Server, Sybase, Teradata, MongoDB, Cassandra, Redis, and more.
 
-To connect to a production database, you will need the server host, port, database name, username and password. For this lesson, we will be using DuckDB, a lightweight, in-process SQL database management system.
+For this lesson, we'll use **DuckDB**, a lightweight, in-process SQL database engine.
 
-Open DBeaver and create a new connection to the DuckDB database file provided in this repo `db/unit-1-3.db`. Refer to the steps [here](https://duckdb.org/docs/guides/sql_editors/dbeaver).
+---
 
-If you expand on the `unit-1-3.db`, you should see a few predefined schemas. The default schema is `main`. Any tables you create without specifying the schema will be in `main`. You can create additional schemas to organise your tables.
+### 🟢 Option 1: Use Pre-Created DuckDB File
 
-OR You coulc create this file yourself using the steps below.
+1. Open **DBeaver**.
+2. Use the DuckDB file provided in this repo:  
+   ```
+   db/unit-1-3.db
+   ```
+3. Create a new connection to DuckDB. Refer to the steps [here](https://duckdb.org/docs/guides/sql_editors/dbeaver).
+
+> If you expand on the `unit-1-3.db`, you should see a few predefined schemas.  
+> - The default schema is `main`.  
+> - Any tables you create without specifying a schema will be in `main`.  
+> - You can also create additional schemas to organize your tables.
+
+---
+
+### ⚙️ Option 2: Create the DuckDB File Yourself
 
 First, set up the DuckDB file, we need to run the following steps:
 
