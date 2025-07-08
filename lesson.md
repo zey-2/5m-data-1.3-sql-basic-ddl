@@ -190,12 +190,6 @@ Add column 'start_date' to table classes.
 ALTER TABLE lesson.classes ADD COLUMN start_date DATE;
 ```
 
-Remove column 'start_date' from table classes.
-
-```sql
-ALTER TABLE lesson.classes DROP COLUMN start_date;
-```
-
 Rename column 'name' to 'code' in table classes.
 
 ```sql
