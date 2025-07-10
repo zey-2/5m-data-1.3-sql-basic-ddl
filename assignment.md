@@ -15,7 +15,14 @@ Write the SQL statement to create a unique index on the `email` column of the `s
 Answer:
 
 ```sql
-
+CREATE TABLE lesson.students (
+  id integer primary KEY, -- primary key
+  name VARCHAR NOT NULL, -- not null
+  address VARCHAR,
+  phone VARCHAR,
+  email VARCHAR CHECK(CONTAINS(email, '@')), -- check
+  class_id INTEGER REFERENCES lesson.classes(id)
+);
 ```
 
 ### Question 2
@@ -25,7 +32,7 @@ Write the SQL statement to alter the `teachers` table in the `lesson` schema to 
 Answer:
 
 ```sql
-
+ALTER TABLE lesson.teachers ADD COLUMN subject VARCHAR;
 ```
 
 ### Question 3
@@ -35,7 +42,9 @@ Write the SQL statement to update the `email` of the teacher with the name 'John
 Answer:
 
 ```sql
-
+UPDATE lesson.teachers
+SET email = 'john.doe@school.com'
+WHERE name = 'John Doe';
 ```
 
 ## Submission
